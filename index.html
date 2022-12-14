@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4494/4494740.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia de Git</title>
+</head>
+<body>
+    <section class="container primeiro">
+        <div class="box">
+            <h1 class="titulo">Guia sobre Git, para iniciantes!</h1>
+            <p class="author">por: <a href="https://github.com/Caio-Pfaltzgraff">Caio Pfaltzgraff</a></p>
+            <img class="flecha" src="https://github.com/guilhermeonrails/manual-do-git-e-github/blob/main/img/arrow-down.png?raw=true" alt="imagem de uma flecha para baixo">
+        </div>
+    </section>
+
+    <section class="container segundo">
+        <div class="box">
+            <h1 class="titulo">Instalação</h1>
+            <p class="paragrafos">Segue abaixo os links para download do Git:</p>
+            <div class="links"><a href="http://msysgit.github.io/">Baixe o git para Windows</a></div>
+            <div class="links"><a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git">Baixe o git para Linux</a></div>
+            <div class="links"><a href="http://git-scm.com/download/mac">Baixe o git para MacOs</a></div>
+        </div>
+    </section>
+
+    <section class="container primeiro">
+        <div class="box">
+            <h1 class="titulo">GitHub</h1>
+            <p class="paragrafos">Plataforma de hospedagem e compartilhamento de código que realiza o controle de versão por meio do Git. O Github permite que os usuários colaborem em conjunto em um projeto, façam modificações e registrem o seu progresso.</p>
+            <img class="icone-github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icone do Github">
+        </div>
+    </section>
+
+    <section class="container segundo">
+        <div class="box">
+            <h1 class="titulo">Adicionando alterações</h1>
+            <p class="paragrafos">Quando desejar adicionar alterações você deve antes de tudo adicionar o arquivo ou os arquivos modificados.</p>
+            <p class="texto-codigo">git add nomeDoArquivo</p>
+            <p class="paragrafos">ou</p>
+            <p class="texto-codigo">git add .</p>
+            <p class="paragrafos">Depois de adicionar os arquivos eles precisam ser "etiquetados" e você pode fazer isso realizando um commit:</p>
+            <p class="texto-codigo">git commit -m "mensagem de commit"</p>
+        </div>
+    </section>
+
+    <section class="container primeiro">
+        <h1 class="titulo">Log</h1>
+        <p class="paragrafos">Exibe os registros ou históricos de commit.</p>
+        <p class="texto-codigo">git log</p>
+        <p class="paragrafos">ou</p>
+        <p class="texto-codigo">git log --oneline</p>
+    </section>
+    <section class="container segundo">
+        <h1 class="titulo">Clonando um repositório</h1>
+        <p class="paragrafos">Use para obter a cópia de um repositório Git existente, criando um clone local dos arquivos</p>
+        <p class="texto-codigo">git clone link-do-repositorio</p>
+        <img class="fork" src="https://raw.githubusercontent.com/guilhermeonrails/manual-do-git-e-github/main/img/fork.png" alt="icone de fork">
+    </section>
+
+    <section class="container primeiro">
+        <h1 class="titulo">Restore</h1>
+        <p class="paragrafos">Restaura os arquivos das árvores de trabalho para serem idênticos aos do commit atual.</p>
+        <p class="texto-codigo">git restore</p>
+        <p class="paragrafos">Use para obter a cópia de um repositório Git existente, criando uma cópia local dos arquivos</p>
+    </section>
+
+    <section class="container segundo">
+        <h1 class="titulo">Push</h1>
+        <p class="paragrafos">Para enviar as alterações para o repositório remoto, é preciso usar o comando:</p>
+        <p class="texto-codigo">git push origin suaBranch</p>
+        <p class="paragrafos">Você pode escolher a branch que quiser no seu projeto</p>
+        <p class="paragrafos">Se você não clonou nenhum repositório e deseja enviar suas alterações para um servidor remoto, precisa adicioná-lo antes com</p>
+        <p class="texto-codigo">git remote add origin servidorRemoto</p>
+        <p class="paragrafos">Agora você pode enviar suas alterações para um servidor remoto</p>
+    </section> 
+</body>
+</html>
