@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+    padding: 2em 1em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeiro{
+    background-color: #eefdff;
+}
+
+.segundo{
+    background-color: #5f9ea0;
+}
+
+.box{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.author{
+    color: rgb(128, 128, 128);
+    margin: 1em 0;
+}
+
+.author a{
+    text-decoration: none;
+    color: #000;
+}
+
+.author a:hover, .links a:hover{
+    text-decoration: underline;
+}
+
+.flecha{
+    margin-top: 1em;
+}
+
+.paragrafos{
+    margin: 1em 0;
+}
+
+.links{
+    font-size: 40px;
+    background-color: #063141;
+    padding: .3em;
+    border-radius: 20px;
+    margin: .5em 0;
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icone-github, .fork{
+    height: 200px;
+}
+
+.texto-codigo{
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 480px){
+    .primeiro, .segundo{
+        width: auto;
+    }
+
+    .titulo{
+        font-size: 1.6em;
+    }
+
+    .author a, .links a{
+        text-decoration: underline;
+    }
+}
